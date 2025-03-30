@@ -1,0 +1,5 @@
+tensorflow==2.12.0  # Adjust based on compatibility
+numpy
+pandas
+scikit-learn
+streamlit
