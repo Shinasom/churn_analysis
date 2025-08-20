@@ -6,6 +6,8 @@ import pandas as pd
 import pickle
 
 
+
+
 model = tf.keras.models.load_model('model.h5')
 
 with open('label_encoder_gender.pkl', 'rb') as file:
@@ -72,5 +74,6 @@ if prediction_proba > 0.5:
     st.error('The customer is likely to churn.')
 else:
     st.success('The customer is not likely to churn.')
+
 
 
